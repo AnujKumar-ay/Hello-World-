@@ -1,0 +1,185 @@
+<html>
+<head>
+  <title>Table Generator</title>
+</head>
+<style>
+table,tr,td{
+border-radius:15px;}
+.a:hover{background-color: cyan;}
+td:hover{background-color: red;}
+.grid-container{
+	display:grid;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+	}
+.grid-item{
+	background-color: rgba(255,255,255,0.8);
+	border:1px solid rgba(0,0,0,0.8);
+	padding:20px;
+	font-size:30px;
+	text-align:center;
+}
+</style>
+<body>
+ <center><table border='1' cellpadding='5' cellspacing='10'>
+<colgroup>
+<col span='3' style='background-color:#D6EEEE'></colgroup>
+  <thead>
+    <tr>
+      <th class='a'>Table Header 1</th>
+      <th class='a'>Table Header 2</th>
+      <th class='a'>Table Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='hover'>Nested Table 1</td>
+      <td>
+        <table border='1' cellpadding='5' cellspacing='10'>
+          <tr>
+            <td>Nested Table Column 1</td>
+            <td>Nested Table Column 2</td>
+          </tr>
+          <tr>
+            <td>Cell Value 1</td>
+            <td>Cell Value 2</td>
+          </tr>
+        </table>
+      </td>
+      <td>Table Cell 3</td>
+    </tr>
+    <tr>
+      <td>Table Cell 1</td>
+      <td>Table Cell 2</td>
+      <td>Table Cell 3</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Table Footer 1</td>
+      <td>Table Footer 2</td>
+      <td>Table Footer 3</td>
+    </tr>
+  </tfoot>
+</table>
+</center>
+<div>
+	<center>
+	<marquee scrollamount='5'>
+	<form method='GET|POST'>
+		First name:<input type='text' name='first_name' placeholder='First Name'/> <br>
+		Last name: <input type='text' name='last_name' placeholder='Last Name'/> <br>
+		<input type='submit' name='submit'/>
+
+	</form></marquee>
+	<hr>
+	<form>
+		Username:<input type='text' name='Username' placeholder='Username'/><br>
+		Password:<input type='password' name='Password' placeholder='Password'/><br>
+		<input type='submit'/>
+	</form><hr>
+	<form>
+		Email:<input type='email' name='Username' placeholder='Email'/><br>
+		Password:<input type='password' name='Password' placeholder='Password'/><br>
+		<input type='submit'/>
+	</form>
+	<form>
+	Description:<br/>
+	<textarea rows='5' cols='50' name='description'>
+	</textarea>
+	</form><hr>
+	
+	<form>
+	<label for='Class'>Choose your Class:</label>
+	<select id='Class' name='Class' size='3' multiple>
+		<option value='I'>I</option>
+		<option value='II'>II</option>
+		<option value='III'>III</option>
+		<option value='IV'>IV</option>
+		<option value='V'>V</option>
+		<option value='VI'>VI</option>
+		<option value='VII'>VII</option>
+		<option value='VIII'>VIII</option>
+		<option value='IX'>IX</option>
+		<option value='X'>X</option>
+		<option value='XI'>XI</option>
+		<option value='XII'>XII</option>
+		<option value='Not In School' selected>Not In School</option>
+	</select>
+		<input type='button' onclick="alert('Click On Submit')">
+		<button type='button' onclick="alert('Click On Submit')">Click Me!</button></br>
+		<input type='submit' name='submit'/>
+	</form>	<hr>
+	<form>
+		<fieldset>
+		<legend>Personalia:</legend>
+		<label for="fname">First Name:</label><br>
+		<input type='text' id='fname' name='fname' value='Enter First Name'><br>
+		<label for='lname'>Last Name:</label><br>	
+		<input type='text' id='lname' name='lname' value='Enter Last Name'><br><br>
+		<input type='submit' value='Submit'>
+		</fieldset>
+	</form>
+	<hr>
+	<form>
+	<input list='browser'>
+		<datalist id='browser'>
+			<option value='Internet Explorer'>
+			<option value='Firefox'>
+			<option value='Chrome'>
+			<option value='Edge'>
+			<option value='Opera'>
+			<option value='Safari'>
+		</datalist>
+	<input type='submit' value='Open'/>
+	</form>
+	<form>
+	<input type='checkbox' id='vehicle1' name='vehicle1' value='Bike'>
+	<label for='vehicle1'>I Have a Bike</label><br>
+	<input type='checkbox' id='vehicle2' name='vehicle2' value='Bike'>
+	<label for='vehicle2'>I Have a Bike</label><br>
+	<input type='checkbox' id='vehicle3' name='vehicle3' value='Bike'>
+	<label for='vehicle3'>I Have a Bike</label><br>
+	<input type='radio' id='vehicle4' name'vehicle4' value='Bike'>
+	<label for'vehicle4'>IHave a Bike</label>
+	<input type='radio' id='vehicle5' name'vehicle5' value='Bike'>
+	<label for'vehicle5'>IHave a Bike</label>
+	<input type='submit' name='Submit'/>
+	</form>
+	<form>
+	<label for='phone'>Enter a phone number:</label>
+	<input type='tel' id='phone' name='phone' placeholder='123-45-678' required>
+	<input type='submit' name='Submit'>
+	</form>
+	<form>
+	<label for='date'>Enter date:</label>
+	<input type='date' id='week' name='week'/><br>
+	</form>
+	<form>
+	<label for='time'>Enter time:</label>
+	<input type='time' id='time' name='time'/>
+	</form>
+	<iframe src="C:\Users\Anuj\Desktop\Practical\HTML\a.html" title="Webpage" height='480' width='480'></iframe>
+	<iframe src="https://www.google.com" title="Webpage" height='480' width='480'></iframe><br>
+	<iframe width="1080" height="720" src="https://www.youtube.com/embed/46cXFUzR9XM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+	</center>
+	
+</div>
+<center><h1>Grid</h1></center>
+<div class="grid-container">
+	<div class="grid-item">1</div>
+	<div class="grid-item">2</div>
+	<div class="grid-item">3</div>
+	<div class="grid-item">4</div>
+	<div class="grid-item">5</div>
+	<div class="grid-item">6</div>
+	<div class="grid-item">7</div>
+	<div class="grid-item">8</div>
+	<div class="grid-item">9</div>
+	<div class="grid-item">10</div>
+	<div class="grid-item">11</div>
+	<div class="grid-item">12</div>
+</div>
+</body>
+</html>
